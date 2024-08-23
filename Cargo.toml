@@ -1,0 +1,15 @@
+[package]
+name = "duck_updater"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dotenv = "0.15.0"
+reqwest = "0.11.18"
+time = { version = "0.3.22", features = ["formatting", "parsing"] }
+tokio = { version = "1.28.2", features = ["full", "fs", "net", "sync", "time"] }
+tracing = "0.1.37"
+tracing-appender = "0.2.3"
+tracing-subscriber = {version = "0.3.17", features = ["std", "local-time", "time", "fmt"]}
